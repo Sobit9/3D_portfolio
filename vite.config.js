@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react(),],
+  plugins: [react()],
   assetsInclude: ['**/*.glb'],
-  base: '/3D_portfolio/',
+  base: '/', // important for custom domain
   build: {
     rollupOptions: {
       output: {
@@ -16,4 +16,4 @@ export default defineConfig({
       }
     }
   }
-});
+})
