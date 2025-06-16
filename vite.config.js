@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react(),
   visualizer({ open: true }),],
   assetsInclude: ['**/*.glb'],
+  base: '/3D_portfolio/',
   build: {
     rollupOptions: {
       output: {
